@@ -16,7 +16,9 @@ import sass from "lume/plugins/sass.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 
-const site = lume();
+const site = lume({
+    src: "pages",
+});
 
 site.use(code_highlight());
 site.use(inline());
